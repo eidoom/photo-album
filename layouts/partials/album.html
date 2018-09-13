@@ -1,0 +1,5 @@
+{{ $path := "/static/albums/{{ .Title }}" }}
+{{ $path }}
+{{ range ( readDir "/static/albums/home" ) }}
+    <div> /albums/{{ $.Title }}/{{ .Name }} </div>
+{{ end }}

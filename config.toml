@@ -67,12 +67,12 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 2
-    [[params.navigation.button2]]
+    [[params.navigation.button1]]
       name = "Highlights"
       url = "#"
 
     # Button Style 1
-    [[params.navigation.button1]]
+    [[params.navigation.button2]]
       name = "All albums"
       url = "blogs"
 

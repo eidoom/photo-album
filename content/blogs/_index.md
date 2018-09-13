@@ -1,9 +1,7 @@
 ---
-title: "Lifestyle"
-slug: "blogs"
-image: pic02.jpg
-date: 2017-10-31T22:27:21-05:00
+title: "All albums"
+slug: ""
+image: "banner.jpg"
+date: 2018-09-13T10:18:04+01:00
 draft: false
 ---
-
-My blogs about technology and lifestyle.

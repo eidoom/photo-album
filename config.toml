@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://example.org/"
+baseURL = "https://eidoom.github.io/photo-album-site/"
 languageCode = "en-us"
 title = "Forty"
 theme = "forty"
@@ -37,8 +37,8 @@ disqusShortname = ""
 
   # Navigation Section
   [params.navigation]
-    title = "Forty"
-    subtitle = "By HTML5 Up"
+    title = "Photographs"
+    subtitle = "By the Moodies"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -81,8 +81,8 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Hi, my name is Forty"
-    subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
+    title = "Title"
+    subtitle = "Subtitle"
     buttonText = "Get Started"
 
 
@@ -137,7 +137,7 @@ disqusShortname = ""
 
   # Section Type Two
   [params.two]
-    enable = true
+    enable = false
     title = "Massa libero"
     subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
     Mauris aliquet magna magna sed nunc rhoncus pharetra. 
@@ -150,7 +150,7 @@ disqusShortname = ""
 
   # Contact section
   [params.contact]
-    enable = true
+    enable = false
     buttonSend = "Send message"
     buttonClear = "Clear"
 
@@ -187,33 +187,33 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Company Name"
+    copyright = "Ryan Moodie"
 
     # Uses font awesome icons
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      url= "https://www.twitter.com"
-      label = "Twitter"
+    # [[params.footer.social]]
+    #   icon = "fa-twitter"
+    #   url= "https://www.twitter.com"
+    #   label = "Twitter"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      url= "https://www.facebook.com"
-      label = "Facebook"
+    # [[params.footer.social]]
+    #   icon = "fa-facebook"
+    #   url= "https://www.facebook.com"
+    #   label = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-instagram"
-      url= "https://www.instagram.com"
-      label = "Instagram"
+    # [[params.footer.social]]
+    #   icon = "fa-instagram"
+    #   url= "https://www.instagram.com"
+    #   label = "Instagram"
     
     [[params.footer.social]]
       icon = "fa-github"
-      url= "https://www.github.com"
+      url= "https://www.github.com/eidoom/photo-album"
       label = "GitHub"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
-      label = "LinkedIn"
+    # [[params.footer.social]]
+    #   icon = "fa-linkedin"
+    #   url= "https://www.linkedin.com"
+    #   label = "LinkedIn"
 
     [[params.footer.quicklinks]]
       text = "Design: "

@@ -1,3 +1,6 @@
 [submodule "themes/forty"]
 	path = themes/forty
 	url = https://github.com/MarcusVirg/forty
+[submodule "public"]
+	path = public
+	url = git@github.com:eidoom/photo-album-site.git

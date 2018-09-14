@@ -1,5 +1,13 @@
 {{ "<!-- Photo album -->" | safeHTML }}
-	{{ $path := printf "%s" ( print "albums/" .Slug ) }}
-	{{ range ( readDir ( printf "%s" ( print "/static/" $path ) ) ) }}
-		<span class="image fit"><img src="{{ $.Site.BaseURL }}{{ $path }}/{{ .Name }}" alt="{{ .Name }}" /></span>
+	<div class="box alt">
+		<div class="row 50% uniform">
+	{{ range readDir ( printf "%s" ( print "/static/albums/" .Slug ) ) }}
+		<span class="4u">
+			<a href="{{ $.Site.BaseURL }}albums/{{ $.Slug }}/{{ .Name }}">
+				{{ $trim := strings.TrimSuffix ".jpg" .Name }}
+				<img src="{{ $.Site.BaseURL }}thumbnails/{{ $.Slug }}/{{ $trim }}-thumbnail.jpg" alt="{{ $trim }}" />
+			</a>
+		</span>
 	{{ end }}
+		</div>
+	</div>

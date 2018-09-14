@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 description: ""
-slug: ""
-image: ""
-album: [""]
+slug: "{{ .TranslationBaseName }}"
+image: "{{ printf "%s" (print "albums/" .TranslationBaseName "/" .TranslationBaseName ".jpg") }}"
 keywords: ""
 categories: 
     - "{{ replace .TranslationBaseName "-" " " | title }}"

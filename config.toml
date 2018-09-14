@@ -30,10 +30,14 @@ disqusShortname = ""
   # Just a custom image variable, please define it in .md files for content.
   image = ""
 
+  # Message for the "proceed" button
+  buttonText = "Let's see them"
+
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    # Links to homepage (baseURL)
+    text = "Please visit this page"
 
   # Navigation Section
   [params.navigation]
@@ -83,7 +87,6 @@ disqusShortname = ""
     # the 'static/img' folder.
     title = "Highlights"
     subtitle = ""
-    buttonText = "Let's see them"
 
 
   # Tiles Section
@@ -94,38 +97,14 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Home"
       subtitle = "No place like it"
-      image = "pic-home.jpg"
+      image = "albums/home/home.jpg"
       url = "blogs/home"
 
     [[params.tiles.showcase]]
       title = "Montenegro"
       subtitle = "Holiday, summer 2018"
-      image = "mne-lakeview.jpg"
+      image = "albums/montenegro/montenegro.jpg"
       url = "blogs/montenegro"
-
-    # [[params.tiles.showcase]]
-    #   title = "Magna"
-    #   subtitle = "Lorem Etiam Nullam"
-    #   image = "pic03.jpg"
-    #   url = "blogs/magna"
-
-    # [[params.tiles.showcase]]
-    #   title = "Ipsum"
-    #   subtitle = "Nisl Sed Aliquam"
-    #   image = "pic04.jpg"
-    #   url = "blogs/ipsum"
-
-    # [[params.tiles.showcase]]
-    #   title = "Consequat"
-    #   subtitle = "Ipsum Dolor Sit Amet"
-    #   image = "pic05.jpg"
-    #   url = "blogs/ipsum"
-
-    # [[params.tiles.showcase]]
-    #   title = "Etiam"
-    #   subtitle = "Feugiat Amet Tempus"
-    #   image = "pic06.jpg"
-    #   url = "blogs/ipsum"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
@@ -140,7 +119,6 @@ disqusShortname = ""
     enable = true
     title = "All albums"
     subtitle = ""
-    buttonText = "Let's see them"
     url = "blogs"
 
 

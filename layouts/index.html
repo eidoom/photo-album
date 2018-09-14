@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+	{{ partial "header.html" . }}
+	<body>
+
+	{{ "<!-- Wrapper -->" | safeHTML }}
+		<div id="wrapper">
+
+			{{ partial "nav.html" . }}
+
+			{{ partial "banner.html" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+			<div id="main">
+
+				{{ if .Site.Params.Tiles.enable }}
+					{{ partial "tile.html" . }}
+				{{ end }}
+
+				{{ if .Site.Params.Two.enable }}
+					{{ partial "two.html" . }}
+				{{ end }}
+
+			</div>
+
+			{{ if .Site.Params.Contact.enable }}
+				{{ partial "contact.html" . }}
+			{{ end }}
+
+			{{ if .Site.Params.Footer.enable }}
+				{{ partial "footer.html" . }}
+			{{ end }}
+
+		</div>
+
+		{{ partial "js.html" . }}
+
+	</body>
+</html>

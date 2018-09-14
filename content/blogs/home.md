@@ -1,9 +1,8 @@
 ---
 title: "Home"
 description: "No place like it"
-slug: ""
-image: "../../photo-album-site/img/pic-home.jpg"
-album: ["apples1.jpg", "apples2.jpg"]
+slug: "home"
+image: "albums/home/home.jpg"
 keywords: ""
 categories: 
     - "Home"

@@ -1,5 +1,5 @@
-{{ $path := "/static/albums/{{ .Title }}" }}
-{{ $path }}
-{{ range ( readDir "/static/albums/home" ) }}
-    <div> /albums/{{ $.Title }}/{{ .Name }} </div>
-{{ end }}
+{{ "<!-- Photo album -->" | safeHTML }}
+	{{ $path := printf "%s" ( print "albums/" .Slug ) }}
+	{{ range ( readDir ( printf "%s" ( print "/static/" $path ) ) ) }}
+		<span class="image fit"><img src="{{ $.Site.BaseURL }}{{ $path }}/{{ .Name }}" alt="{{ .Name }}" /></span>
+	{{ end }}

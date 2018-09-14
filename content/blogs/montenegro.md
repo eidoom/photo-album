@@ -1,8 +1,8 @@
 ---
 title: "Montenegro"
 description: "Holiday, summer 2018"
-slug: ""
-image: "mne-lakeview.jpg"
+slug: "montenegro"
+image: "albums/montenegro/montenegro.jpg"
 keywords: ""
 categories: 
     - "Montenegro"
@@ -10,5 +10,3 @@ categories:
 date: 2018-09-13T10:18:04+01:00
 draft: false
 ---
-
-![image](../../img/mne-lakeview.jpg)

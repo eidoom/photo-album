@@ -1,3 +1,8 @@
 a {
 	border-bottom: none;
 }
+
+#banner.style2 {
+	background-image: url("../img/banner2.jpg");
+	background-position: bottom;
+}

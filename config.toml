@@ -1,14 +1,14 @@
 # Site settings
-baseURL = "https://eidoom.github.io/photo-album-site/"
+baseURL = "//eidoom.github.io/photo-album-site/"
 languageCode = "en-us"
-title = "Family Photographs"
+title = "Ryan's photos"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
 # Enter your disqus shortname to enable comments
-disqusShortname = ""
+disqusShortname = "@ryanmoodie"
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
@@ -19,8 +19,8 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "The Moodies"
-  description = "Family photographs"
+  name = "Ryan's photographs"
+  description = "A selection of personal photograph albums."
 
   # Link custom assets relative to /static
   custom_css = ["css/custom.css"]
@@ -42,7 +42,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Photographs"
-    subtitle = "By the Moodies"
+    subtitle = "by Ryan"
     menu = "Navigate"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -86,7 +86,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Highlights"
-    subtitle = ""
+    subtitle = "Ooh!"
 
 
   # Tiles Section
@@ -94,16 +94,23 @@ disqusShortname = ""
     enable = true
     # Display your showcases here.
     
-    [[params.tiles.showcase]]
-      title = "Home"
-      subtitle = "No place like it"
-      image = "albums/home/home.jpg"
-      url = "blogs/home"
+    #[[params.tiles.showcase]]
+    #  title = "Home"
+    #  subtitle = "No place like it"
+    #  image = "albums/home/home.jpg"
+    #  url = "blogs/home"
 
+    [[params.tiles.showcase]]
+      title = "Durham"
+      subtitle = "2018+"
+      image = "thumbnails/durham/IMG_20190917_095148-edit-thumbnail.jpg"
+      url = "blogs/durham"
+    
     [[params.tiles.showcase]]
       title = "Montenegro"
       subtitle = "Holiday, summer 2018"
       image = "albums/montenegro/montenegro.jpg"
+      #image = "thumbnails/montenegro/montenegro-thumbnail.jpg"
       url = "blogs/montenegro"
     # You can make more showcases by copy and pasting the code above
 
@@ -161,7 +168,9 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
+    #copyright = "[Ryan Moodie](//eidoom.github.io)"
     copyright = "Ryan Moodie"
+    url = "//eidoom.github.io"
 
     # Uses font awesome icons
     # [[params.footer.social]]
@@ -181,7 +190,7 @@ disqusShortname = ""
     
     [[params.footer.social]]
       icon = "fa-github"
-      url= "https://www.github.com/eidoom/photo-album-site"
+      url= "//www.github.com/eidoom/photo-album-site"
       label = "GitHub"
 
     # [[params.footer.social]]
@@ -191,5 +200,5 @@ disqusShortname = ""
 
     [[params.footer.quicklinks]]
       text = "Design: "
-      url= "https://www.html5up.net"
-      alt = "HTML5 UP"
+      url= "https://themes.gohugo.io/forty/"
+      alt = "Forty"

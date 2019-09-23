@@ -4,6 +4,8 @@
 # E.g. bash generate-thumbnails.sh home
 # Uses Imagemagick to create thumbnals for all the images in the album
 
+mkdir static/thumbnails/$1
+
 for file in static/albums/$1/*; 
 do 
 	temp=${file#static/albums}

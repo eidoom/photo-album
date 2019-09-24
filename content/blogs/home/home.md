@@ -1,14 +1,15 @@
+
 ---
-title: "Home"
-description: "No place like it"
+title: "home"
+description: ""
 slug: "home"
 image: "albums/home/home.jpg"
 keywords: ""
 categories: 
     - "Home"
     - ""
-date: 2018-09-13T10:18:04+01:00
-type: "album"
-layout: "album"    
+date: 2019-09-24T16:41:26+01:00
+type: "photo"
+layout: "photo"
 draft: false
 ---

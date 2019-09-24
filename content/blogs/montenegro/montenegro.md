@@ -1,14 +1,15 @@
+
 ---
-title: "Montenegro"
-description: "Holiday, summer 2018"
+title: "montenegro"
+description: ""
 slug: "montenegro"
 image: "albums/montenegro/montenegro.jpg"
 keywords: ""
 categories: 
     - "Montenegro"
     - ""
-date: 2018-09-13T10:18:04+01:00
-type: "album"
-layout: "album"
+date: 2019-09-24T16:41:32+01:00
+type: "photo"
+layout: "photo"
 draft: false
 ---

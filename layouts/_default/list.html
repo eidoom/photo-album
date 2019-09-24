@@ -29,9 +29,10 @@
                 </section>
 
                 <section id="two" class="spotlights">
-                    {{ range .Pages }}
+		{{ $albums := where .Pages "Type" "album" }}
+                    {{ range $albums }}
                     <section>
-                        <a href="{{ .URL }}" class="image">
+                        <a href="{{ .Permalink }}" class="image">
                             <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" data-position="center center" />
 						</a>
                         <div class="content">
@@ -41,7 +42,7 @@
                                 </header>
                                 <p>{{ .Description }}</p>
                                 <ul class="actions">
-                                    <li><a href="{{ .URL }}" class="button">{{ .Site.Params.buttonText }}</a></li>
+                                    <li><a href="{{ .Permalink }}" class="button">{{ .Site.Params.buttonText }}</a></li>
                                 </ul>
                             </div>
                         </div>

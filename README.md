@@ -19,5 +19,4 @@ vim content/blogs/$ALBUM.md
 * Finish guide
 * Make single automation script
 * Single photo page:
-	* Button to centre image on screen (by scrolling down automatically)
-	* If constrained by width, then use width as limiting dimension instead of height
+	* Button to centre image on screen (by scrolling down automatically) - and same for albums

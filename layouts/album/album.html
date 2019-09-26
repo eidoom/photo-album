@@ -21,8 +21,13 @@
 <!--                             {{ if .Params.image }}
                                 <span class="image main"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></span>
                             {{ end }} -->
+			    <ul class="actions">
+			<li><a href="#one" class="button next scrolly">{{ .Site.Params.buttonText }}</a></li>
+			</ul>
+			<div id="main">
                             {{ .Content }}
                             {{ partial "album.html" . }}
+			    </div>
                         </div>
                     </section>
             

@@ -93,25 +93,26 @@ disqusShortname = "photo-album-site"
   [params.tiles]
     enable = true
     # Display your showcases here.
-    
-    #[[params.tiles.showcase]]
-    #  title = "Home"
-    #  subtitle = "No place like it"
-    #  image = "albums/home/home.jpg"
-    #  url = "blogs/home"
 
-    [[params.tiles.showcase]]
+     [[params.tiles.showcase]]
       title = "Durham"
       subtitle = "2018+"
       image = "thumbnails/durham/IMG_20190917_095148-edit-thumbnail.jpg"
-      url = "blogs/durham"
-    
+      url = "blogs/durham"   
+
     [[params.tiles.showcase]]
       title = "Montenegro"
       subtitle = "Holiday, summer 2018"
       image = "albums/montenegro/montenegro.jpg"
       #image = "thumbnails/montenegro/montenegro-thumbnail.jpg"
       url = "blogs/montenegro"
+
+    #[[params.tiles.showcase]]
+    #  title = "Highlands"
+    #  subtitle = "Home"
+    #  image = "albums/home/home.jpg"
+    #  url = "blogs/home"
+
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]

@@ -1,14 +1,14 @@
 {{ "<!-- Photo album -->" | safeHTML }}
 <div class="box alt">
-<div class="row 50% uniform">
-{{ range readDir ( printf "%s" ( print "/static/albums/" .Slug ) ) }}
-	<span class="4u">
-	{{ $name := replace .Name ".jpg" ""  }}
-	<a href="{{ $.Site.BaseURL }}blogs/{{ $.Slug }}/{{ lower $name }}">
-	{{ $trim := strings.TrimSuffix ".jpg" .Name }}
-	<img src="{{ $.Site.BaseURL }}thumbnails/{{ $.Slug }}/{{ $trim }}-thumbnail.jpg" alt="{{ $trim }}" />
-	</a>
-	</span>
-{{ end }}
-</div>
+	<div class="row 50% uniform" id="album">
+		{{ range readDir ( printf "%s" ( print "/static/albums/" .Slug ) ) }}
+		<span class="4u">
+			{{ $name := replace .Name ".jpg" ""  }}
+			<a href="{{ $.Site.BaseURL }}blogs/{{ $.Slug }}/{{ lower $name }}">
+				{{ $trim := strings.TrimSuffix ".jpg" .Name }}
+				<img src="{{ $.Site.BaseURL }}thumbnails/{{ $.Slug }}/{{ $trim }}-thumbnail.jpg" alt="{{ $trim }}" />
+			</a>
+		</span>
+		{{ end }}
+	</div>
 </div>

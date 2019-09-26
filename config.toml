@@ -32,6 +32,7 @@ disqusShortname = "photo-album-site"
 
   # Message for the "proceed" button
   buttonText = "Let's see them"
+  altButtonText = "Let's see it"
 
   # 404 error customization
   [params.error404]

@@ -7,40 +7,44 @@
     {{ "<!-- Wrapper -->" | safeHTML }}
         <div id="wrapper">
 
-            {{ partial "alt-nav.html" . }}
+            {{ partial "nav.html" . }}
 
         {{ "<!-- Main -->" | safeHTML }}
             <div id="main" class="alt">
 
-                <!-- One -->
-                    <section id="one">
+                {{ "<!-- One -->" | safeHTML }}
+                    <section>
                         <div class="inner">
                             <header class="major">
                                 <h1>{{ .Title}}</h1>
                             </header>
-			    <ul class="actions">
-				                            <li><a href="#photo" class="button next scrolly">{{ .Site.Params.altButtonText }}</a></li>
-							                            </ul>
-
-                            {{ if .Params.image }}
-			    <span id="photo"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Params.slug }}" class="photo" ></span>
-                            {{ end }}
+<!--                             {{ if .Params.image }}
+                                <span class="image main"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></span>
+                            {{ end }} -->
+			    <div>
+			<div class="content">
                             {{ .Content }}
-                        </div>
+			</div>
+			<ul class="actions">
+			<li><a href="#album" class="button next scrolly">{{ .Site.Params.buttonText }}</a></li>
+			</ul>
                     </section>
-            {{ "<!-- Disqus Inject -->" | safeHTML }}
+			    </div>
+			    <section id="one">
+                            {{ partial "album.html" . }}
+			    </section>
+                        </div>
+            
                 {{ if .Site.DisqusShortname }}
-                  {{ partial "disqus.html" . }}
+                    {{ partial "disqus.html" . }}
                 {{ end }}
             </div>
             
-        {{ "<!-- Footer -->" | safeHTML}}
             {{ if .Site.Params.footer.enable }}
                 {{ partial "footer.html" . }}
             {{ end }}
         </div>
 
-    {{ "<!-- Scripts -->" | safeHTML}}
         {{ partial "js.html" . }}
 
     </body>

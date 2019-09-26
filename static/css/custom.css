@@ -12,5 +12,15 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
-	height: 99vh;
+	height: 90vh;
+	max-height: 100%;
+	object-fit: conatin;
+}
+
+@media all and (max-aspect-ratio: 4/3) {
+	.photo {
+		width: 90vw;
+		height: auto;
+		max-width: 100%;
+	}
 }

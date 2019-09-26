@@ -11,6 +11,7 @@ mkdir $DIR
 for PHOTO in $PHOTOS; do cp $PHOTO $DIR/$PHOTO; done
 ./generate-thumbnails.sh $ALBUM
 hugo new -k album blogs/$ALBUM.md
+./generate-photo-pages.sh $ALBUM
 vim content/blogs/$ALBUM.md
 ```
 
